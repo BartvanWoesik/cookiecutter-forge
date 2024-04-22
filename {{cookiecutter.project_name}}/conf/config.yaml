@@ -1,0 +1,12 @@
+model:
+  model_steps:
+    - HistGradientBoostingClassifier:
+        _target_: sklearn.ensemble.HistGradientBoostingClassifier
+        learning_rate: 0.057
+
+data_pipeline:
+ _target_: model_forge.data.datapipeline.PandasDataPipeline
+ steps:
+  - _target_: datapipeline.steps.multiply 
+    _partial_: true
+    column: X
