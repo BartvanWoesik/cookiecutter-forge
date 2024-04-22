@@ -14,3 +14,11 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.11"
 
+numpy = "^1.20.1"
+pandas = "^1.2.2"
+ruff = "^0.3.7"
+mkdocs = "^1.5.3"
+pre-commit = "^3.7.0"
+
+model-forge = {git = "https://github.com/BartvanWoesik/model-forge.git"}
+visualisation-forge = {git = "https://github.com/BartvanWoesik/visualisation-forge.git"}

@@ -1,6 +1,7 @@
 {
     "project_name": "My New Project",
     "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "project_env": "{{ cookiecutter.project_name|lower|replace('-', '') }}",
     "project_description": "This is a new project created for {{ cookiecutter.project_name }}.",
     "author_name": "John Doe",
     "author_email": "John@Doe"
